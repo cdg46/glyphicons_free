@@ -8,7 +8,7 @@ die('Access denied.');
 if (!is_array($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY])) {
 $GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY] = unserialize($GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][$_EXTKEY]);
 }
-\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile(, 'Configuration/TypoScript/', 'glyphicons_free');
+\TYPO3\CMS\Core\Utility\ExtensionManagementUtility::addStaticFile($_EXTKEY, 'Configuration/TypoScript/', 'glyphicons_free');
 
 $TCA['pages']['columns'] += array(
     'icon' => array(
