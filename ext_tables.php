@@ -15,9 +15,10 @@ $TCA['pages']['columns'] += array(
         'label' => 'Glyphicons free',
         'exclude' => 1,
         'config' => array(
-                'type' => 'select',
-                'selicon_cols' => 14,
-                'items' => array(
+            'type' => 'select',
+            'selicon_cols' => 14,
+            'items' => array(
+                array('Aucun', 0, 'EXT:glyphicons_free/Resources/Public/Images/Icons/none.jpg'),
 			array('book-open', 'book-open', 'EXT:glyphicons_free/Resources/Public/Images/Icons/glyphicons/png/glyphicons-352-book-open.png'),
 			array('nails', 'nails', 'EXT:glyphicons_free/Resources/Public/Images/Icons/glyphicons/png/glyphicons-374-nails.png'),
 			array('ipod-shuffle', 'ipod-shuffle', 'EXT:glyphicons_free/Resources/Public/Images/Icons/glyphicons/png/glyphicons-168-ipod-shuffle.png'),

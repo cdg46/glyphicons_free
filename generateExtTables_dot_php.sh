@@ -20,9 +20,10 @@ if (!is_array(\$GLOBALS['TYPO3_CONF_VARS']['EXT']['extConf'][\$_EXTKEY])) {
         'label' => 'Glyphicons free',
         'exclude' => 1,
         'config' => array(
-                'type' => 'select',
-                'selicon_cols' => 14,
-                'items' => array(" > ext_tables.php
+            'type' => 'select',
+            'selicon_cols' => 14,
+            'items' => array(
+                array('Aucun', 0, 'EXT:glyphicons_free/Resources/Public/Images/Icons/none.jpg')," > ext_tables.php
 
 find . -iname '*.png' -exec echo "{}" \; | cut -d'/' -f 2,3,4,5,6,7,8 > list.txt
 for i in $(cat list.txt); do
